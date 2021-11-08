@@ -1,6 +1,6 @@
-title: cxleb
+title: be1xc
 subtitle: find everything could be
-author: cxleb
+author: be1xc
 language: en
 date_format: '%Y-%m-%d'
 
@@ -194,7 +194,7 @@ social_icons:
   enable: true
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
-  GitHub: https://github.com/belxc/
+  GitHub: https://github.com/be1xc/
   Twitter: twitter
   Weibo: weibo
 
