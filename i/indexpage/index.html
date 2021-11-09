@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2920248_9i77aig38fs.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="searchBox">
+
+            <input class="searchInput" type="text" id="text" placeholder="Search">
+            <button class="searchButton" id="s">
+                <i class="material-icons">
+                    search
+                </i>
+            </button>
+        </div>
+
+
+        <div class="sidebar">
+
+            <div class="social-links">
+                <a href="http://be1xc.github.io/"><i class="icon iconfont icon-github1"></i></a>
+                <a href="https://gitee.com/belxc"><i class="icon iconfont icon-gitee"></i></a>
+                <a href="http://be1xc.github.io/"><i class="icon iconfont icon-blog"></i></a>
+                <!-- http://down.zerun.asia/   百度解析 -->
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let search = document.getElementById('s')
+        let text = document.getElementById('text')
+        search.onclick = function () {
+            window.location.href = 'https://www.baidu.com/s?wd=' + text.value
+        }
+    </script>
+</body>
+
+</html>
