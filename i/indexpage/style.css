@@ -70,12 +70,13 @@ a, a:link, a:visited, a:hover, a:active, a:focus{
 
 }
 
-.searchBox:hover > .searchInput {
-    width: 240px;
+.searchBox > .searchInput {
+    /* width: 240px; */
+    width: 80%;
     padding: 0 6px;
 }
 
-.searchBox:hover > .searchButton {
+.searchBox > .searchButton {
   background: white;
   color : #2f3640;
 }
@@ -86,11 +87,14 @@ a, a:link, a:visited, a:hover, a:active, a:focus{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #2f3640;
+    border: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;
+}
+
+.searchButton:hover{
+    background-color:#9da0a7
 }
 
 .searchInput {
@@ -105,11 +109,4 @@ a, a:link, a:visited, a:hover, a:active, a:focus{
     line-height: 40px;
     width: 0px;
 
-}
-
-@media screen and (max-width: 620px) {
-.searchBox:hover > .searchInput {
-    width: 150px;
-    padding: 0 6px;
-}
 }

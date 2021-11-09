@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display</title>
+    <title>Index
+    </title>
     <link rel="icon" href="data:;base64,=">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_2920248_9i77aig38fs.css">
@@ -16,10 +17,10 @@
 
         <div class="searchBox">
 
-            <input class="searchInput" type="text" id="text" placeholder="Search">
-            <button class="searchButton" id="s">
+            <input class="searchInput" type="text" id="text" placeholder="Type for Search">
+            <button class="searchButton" type="submit" id="s">
                 <i class="material-icons">
-                    search
+                    go
                 </i>
             </button>
         </div>
@@ -41,7 +42,19 @@
         let search = document.getElementById('s')
         let text = document.getElementById('text')
         search.onclick = function () {
-            window.location.href = 'https://www.baidu.com/s?wd=' + text.value
+            if(text.value!=''){
+                window.open('https://www.baidu.com/s?wd=' + text.value)
+                text.value = ''
+            }   
+        }
+        document.onkeydown = function(){
+            if(window.event.keyCode == 13){
+                if(text.value!=''){
+                window.open('https://www.baidu.com/s?wd=' + text.value)
+                text.value = ''
+            }   
+            }
+       //做点击回车后的事件，回车的键值是13
         }
     </script>
 </body>
