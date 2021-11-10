@@ -16,7 +16,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus{
     background: linear-gradient(#f5f7fa,#c3cfe2);
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
 
@@ -67,7 +67,6 @@ a, a:link, a:visited, a:hover, a:active, a:focus{
     height: 40px;
     border-radius: 40px;
     padding: 10px;
-
 }
 
 .searchBox > .searchInput {
@@ -82,15 +81,18 @@ a, a:link, a:visited, a:hover, a:active, a:focus{
 }
 
 .searchButton {
+		position: absolute;
     color: white;
-    float: right;
+		right: 10px;
+    /* display: flex; */
+		float: right;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: 1px;
-    display: flex;
     justify-content: center;
     align-items: center;
+		font-weight: bold;
 }
 
 .searchButton:hover{
